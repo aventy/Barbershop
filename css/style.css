@@ -1,4 +1,4 @@
-body {
+.bg {
 	background: #000000 url("../img/barbershop-index.jpg") no-repeat 50% 3px;
 	background-size: cover;	
 }
@@ -54,7 +54,11 @@ body {
 .index-content {
 	margin-bottom: 35px;
 	padding: 50px 80px;
-	background: #faf7f4 url("../img/index-content-pattern?") repeat 0px 0px;
+	background: #faf7f4;
+	background-image: url("../img/divider.png"), url("../img/content-pattern.png");
+	background-repeat: no-repeat, repeat;
+	background-position: 50% 50%, 0px 0px;
+	
 }
 
 .index-content-left {
@@ -68,7 +72,7 @@ body {
 
 .main-footer {
 	margin-top: 65px;
-	background: #222 url("../img/footer-pattern?") repeat 0px 0px;
+	background: #222 url("../img/footer-pattern.png") repeat 0px 0px;
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
