@@ -1,8 +1,12 @@
-.bg {
-	background: #000000 url("../img/barbershop-index.jpg") no-repeat 50% 3px;
-	background-size: cover;	
+/*Base*/
+@font-face {
+	font-family: 'PT_Sans';
+	src: url('../fonts/PT_Sans-Web-Regular.ttf')  format('truetype');
 }
-
+body {
+  font-family: 'PT_Sans', 'Times New Roman', sans-serif;
+}
+/*Layout*/
 .clearfix::after {
 	content: "";
 	display: table;
@@ -20,14 +24,14 @@
 }
 .main-navigation {
 	float: left;
-	width: 780px;
 
 }
 
 .user-block {
 	float: right;
-	width: 140px;
+	margin: 16px 16px 16px 0;
 }
+
 
 .index-logo {
 	width: 368px;
@@ -38,13 +42,17 @@
 }
 
 .features {
-	margin-bottom: 80px;
+	margin-bottom: 85px;
+	padding: 0 20px;
+}
+.features-name {
+	margin-left: 33%;
+	position: relative; 
 }
 
 .features-item {
 	float: left;
 	width: 300px;
-	margin-right: 20px;
 }
 
 .features-item:last-child {
@@ -90,4 +98,59 @@
 .footer-copyright {
 	float: right;
 	width: 180px;
+}
+/*apearence*/
+.bg {
+	background: #000000 url("../img/barbershop-index.jpg") no-repeat 50% 3px;
+	background-size: cover;	
+}
+.main-header {
+	background-color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+}
+.main-navigation li {
+	display: inline-block;
+	margin-right: 40px;
+}
+.main-navigation a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.user-block a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.user-block::before {
+	margin-right: 14px;
+	content: url('../img/login-icon.png');
+	background-color: #fff;
+}
+.features {
+	color: #fff;
+}
+.features-name {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+}
+.features-name::after {
+	content: "";
+	position: absolute;
+	top: 53px;
+	left: 35%;
+	width: 28px;
+	height: 28px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+.features-name + p {
+	margin-top: 85px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
 }
