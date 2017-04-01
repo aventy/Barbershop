@@ -5,6 +5,9 @@ Stats:
 * Layout type: fixed width
 * Technology in use:
 	+ All theory on practice
+	+ Git
+	+ GitHub
+	+ Photoshop
 
 * Project features:
 >#cssROTATE #boxshadow
